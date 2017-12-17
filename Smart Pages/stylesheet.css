@@ -1,0 +1,162 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Banner Style */
+
+#banner {
+    width: 100%
+    height: 6%;
+    background-color: white;
+}
+
+#logo {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 2%;
+}
+
+#banner-text {
+    text-align: center;
+}
+
+#directions {
+    text-align: center;
+    line-height: 200%;
+}
+
+/* Page Left Style */
+
+.left-side {
+    background-color: #006098;
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.left-side li{
+    color: white;
+}
+
+.left-side h3 {
+    font-size: 2em;
+    margin-left: 3%;
+    color: ghostwhite;
+    text-decoration: underline;
+}
+
+.details {
+    width: 40%;
+    margin-left: 4%;
+    color: white;
+    font-style: italic;
+    
+}
+
+.primary {
+    font-size: 1.5em;
+    margin-left: 10%;
+    line-height: 1.5em;
+
+}
+
+.secondary {
+    font-size: 1.5em;
+    margin-left: 20%;
+    line-height: 1.5em;
+}
+
+.expandIcon {
+    font-size: 1em;
+    font-weight: bold;
+    color: #C1D32F;
+    margin-left: 2.5%;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
+.free {
+    text-decoration: none;
+    color: black;
+}
+
+.selected {
+    font-size: 1.75em;
+    background-color: #B9DB2D;
+    color: black !important;
+    width: 50%;
+    text-align: center;
+}
+
+/* Page Right Style */
+
+.right-side {
+    background-image: url("images/logo02.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right top; 
+    background-color: rgba(193,211,47,0.7);
+    display: inline-block;
+    padding-left: 5%;
+    margin-top: -10px;
+    margin-right: 15%;
+    width: 30%;
+    height: 100%;
+    float: right;
+    position: fixed;
+
+}
+
+#menu-title {
+    margin-left: 20%;
+}
+
+.right-side h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: black;
+    margin-left: -4%;
+}
+
+#proteinMenu {
+    color: #005A9C;
+    font-weight: 600;
+}
+
+#uVegMenu {
+    color: #005A9C;
+    font-weight: 600;
+}
+
+#sVegMenu {
+    color: #005A9C;
+    font-weight: 600;
+}
+
+#oVegMenu {
+    color: #005A9C;
+    font-weight: 600;
+}
+
+#seasonMenu {
+    color: #005A9C;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>HTML5 Multimedia Guide</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+         <link rel="stylesheet" href="style.css">
+        
+        <link href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    </head>
+
+    <body class="background info">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="index.html">HTML5 Multimedia</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Background<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="background_history.html">Multimedia Before HTML5</a></li>
+                    <li><a href="background_changes.html">Changes With HTML5</a></li>
+                  </ul>
+                </li>   
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="tutorial_video.html">Video</a></li>
+                    <li><a href="tutorial_audio.html">Audio</a></li>
+                  </ul>
+                </li> 
+                <li class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">More Info<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="info_usability.html">Usability</a></li>
+                    <li class="active"><a href="info_accessibility.html">Accessibility</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+    
+        <div class="container">
+          <h3>Accessibility</h3>
+            
+             <h4>Overview</h4> 
+            <div class='content'>
+                <p>
+                   The goal of multimedia accessibility is to make audio and video content available to users who may have sensory impairments, language difficulties, require devices like a screen reader, or who can’t otherwise view/hear the content due to other limitations. If you would like an overview of the different types of limitations a user may have and how to provide accommodations for them, check out the table below. 
+                </p>
+                
+                
+                <h4 align='center'>
+                    Common Accessibility Issues
+                    <sub>
+                        <a href="https://www.w3.org/TR/media-accessibility-reqs">&#91;1&#93;</a>
+                    </sub>
+                </h4>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Limitation</td>
+                            <td>Accommodation</td>
+                        </tr>  
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Visual<br/>Blindness</td>
+                            <td class='left-align'>
+                                Need alternative representation of audio/text.<br/>
+                                Media content needs to be operable with assistive technologies.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Visual<br/>Low Vision</td>
+                            <td class='left-align'>
+                                Likely use screen magnification software. <br/>
+                                Often benefit from same text streams available for screen readers.
+                            </td>
+                        </tr>    
+                        <tr>
+                            <td>Visual<br/>Atypical Color Perception</td>   
+                            <td class='left-align'>
+                                May not be able to discriminate between different colors. <br/>
+                                Avoid media controls only relying on color to convey meaning.
+                            </td>
+                        </tr>
+                        <tr>
+                             <td>Auditory<br/>Deafness</td>
+                            <td class='left-align'>
+                                Generally, cannot use audio. <br/>
+                                Require alternative representation through captions or sign translation.
+                            </td>
+                        </tr>    
+                        <tr>
+                            <td>Auditory<br/>Hard of Hearing</td>
+                            <td class='left-align'>
+                                May be able to use some audio material. <br/>
+                                Easy to access speed and volume controls are helpful.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Auditory and Visual<br/>Deaf-blind</td>
+                            <td class='left-align'>
+                                Depending on abilities, may need stylable captions or descriptive audio<br/>
+                                Consider adding non-time-based transcript that can read at one's own pace.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Physical Impairment</td>
+                            <td class='left-align'>
+                                Might be using keyboard but not mouse/assistive technology.<br/>
+                                Media player must be usable without pointing device.
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>Cognitive Disabilities</td>
+                            <td class='left-align'>
+                                Wide range of conditions including memory impairments, autism, and seizure disorders<br/>
+                                In general, provide alternative content in clear, concise manner.
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+
+                
+                </table>
+            </div>
+            
+             <h4>Subtitles</h4> 
+            <div class='content'>
+                <p>
+                   To make video elements accessible for people with hearing difficulties or users unable to play sound subtitles are a widely accepted practice. The two most popular subtitling formats currently in use are  <strong>SRT</strong> (SubRip Subtitle)  and <strong>WebVTT</strong> (Web Video Text Tracks). These files sync audio cues to timecodes an allow text do display in time to visuals. 
+                    <br/><br/>
+                    If you have a caption/subtitle file prepared it is really very easy to add it to a video. Within the video tag you will add a new <span class='background-span1'>&lt;track&gt;</span> tag much like you would add a <span class='background-span1'>&lt;source&gt; </span> tag. This track tag will tell the video player what kind of text is being used, where it is stored, and what language the text is for. Sites with international users can include multiple language subtitle tracks and allow users to select their language of choice.  
+                </p>
+                <p>Here’s what the HTML for adding a subtitle would look like:</p>
+                
+                 <div class='example-code'>
+<pre>
+<code class='code'>
+&lt;video controls='controls'&gt;
+    &lt;source src="video/vid1.mp4" type="video/mp4"&gt;
+    <span class='highlight'>&lt;track src="video/subtitles.srt" kind="subtitles" srclang="en"&gt;</span>
+   Your browser doesn't support HTML5 Video.
+&lt;/video&gt;
+</code>
+</pre>
+                    </div>
+            </div>
+            
+             <h4>Multimedia Controls</h4> 
+            <div class='content'>
+                <p>
+                   The appearance of a default multimedia element will differ depending on the browser accessing the website. Each of the major vendors has minor cosmetic tweak towards presenting a video and control scheme. Fortunately, despite looking different browser to browser, the controls all feature mostly the same functionality and behave similarly.  
+                   <br/><br/>
+                    Currently only some browsers have keyboard enabled media controls. Developers should be aware of this and attempt to add custom audio and video controls to their pages. Luckily, some simple JavaScript is all it takes to make multimedia content behave consistently. If you are interested in adding better controls for your multimedia, be sure to check out this multimedia accessibility guide from the Mozilla Developers network. Power users may also be interested in customizing the appearance of the default player by adding unique CSS and JavaScript to their code. 
+                </p>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="https://webdesign.tutsplus.com/tutorials/create-a-customized-html5-audio-player--webdesign-7081" target="_blank">Tuts+ Custimized HTML5 Audio Player Tutorial</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Video_player_styling_basics" target="_blank">Mozilla Video Player Sytling Basics</a></li>
+                </ul>
+            </div>
+            
+          
+        </div> 
+    </body>
+    
+</html>

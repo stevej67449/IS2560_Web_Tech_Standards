@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>HTML5 Multimedia Guide</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+         <link rel="stylesheet" href="style.css">
+        
+        <link href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    </head>
+
+    <body class="background info">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="index.html">HTML5 Multimedia</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Background<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="background_history.html">Multimedia Before HTML5</a></li>
+                    <li><a href="background_changes.html">Changes With HTML5</a></li>
+                  </ul>
+                </li>  
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="tutorial_video.html">Video</a></li>
+                    <li><a href="tutorial_audio.html">Audio</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">More Info<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="active"><a href="info_usability.html">Usability</a></li>
+                    <li><a href="info_accessibility.html">Accessibility</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+    
+        <div class="container">
+          <h3>Usability</h3>
+            
+            <h4>Format Frustrations</h4> 
+            <div class='content'>
+                <p>
+                   While HTML5’s native multimedia capabilities are in improvement over previous systems, it is not a perfect solution for communicating content. Currently there is not a universal video codec that is supported across all browsers. Similar quirks are common with audio files, but as a vast majority of internet audio files are encoded as MP3s it is much easier problem for browser developers to manage.
+                   <br/><br/>
+                    In fact, much like the multimedia plug-in situation of the previous generations, video file support is a fractured and confusing ecosystem of compatibility issues. As different vendors have attached themselves to preferred video codecs, a user’s experience with web video may depend heavily on their browser choice. 
+                    <br/><br/> 
+                    An accepted best practice for both audio and video content is to provide the same conent in multiple file formats via the 'source' tag. <br/>
+                    By doing this, developers can mitigate the chance that a user won't be able to interact with multimedia elements.
+                </p>
+                
+                <h4 align='center'>Browser Support for HTML5 Multimedia</h4>
+                <figure>
+                    <img id="support-image" src="images/file_support.JPG">
+                    <h5 align='center'>Full list of multimedia file support for desktop browsers.<sub><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats">[1]</a></sub></h5>
+                </figure>
+                
+            </div>
+          
+            <h4>Mobile Devices</h4> 
+            <div class='content'>
+                <p>
+                   Another aspect of usability worthy of our attention is mobile multimedia concerns. Just like traditional computer-based applications, mobile browsers also have peculiarities on which files they support. However, mobile browsing brings in a new host of issues for developers to worry about like limited bandwidth, intrusive auto-play, and volume adjustment just to name a few. 
+                   <br/><br/>
+                    Users on mobile may wish to disable multimedia content on their phone’s browser to keep their data usage low. In these instances, it is important that developers include fallback code so that the user’s interaction with a site won’t be completely disrupted if they don’t view or listen to the multimedia content. 
+                </p>
+                <p> To learn more about integrating multimedia for mobile users, check out these links:
+                    <ul>
+                        <li><a href="https://mobiforge.com/design-development/html5-mobile-developers" target="_blank">HTML5 For Mobile Developers</a></li>
+                        <li><a href="http://www.creativebloq.com/html5/deliver-video-seamlessly-desktop-and-mobile-devices-2126484">Creative Bloq's Guide to Mobile HTML5 Video</a></li>
+                    </ul>
+                </p>
+            </div>
+            
+            <h4>Bandwith Considerations <br/> & Video Alternatives</h4> 
+            <div class='content'>
+                <p>
+                   You should always be aware of bandwidth speeds when adding multimedia elements to a site. Video files especially are much larger than text or images and can slow down a website if mishandled. Additionally, if you are concerned about keeping the about of data you host online to a minimum, you might want to look for alternatives like emending links to online video providers like <a href="https://www.youtube.com/" target="_blank">YouTube</a> or <a href="https://vimeo.com/" target="_blank">Vimeo</a> to reduce your personal data burden. Such solutions can be convenient, but they do limit your ability to control your personal video content. 
+                </p>
+            </div>
+            
+        </div>  
+    </body>
+    
+</html>

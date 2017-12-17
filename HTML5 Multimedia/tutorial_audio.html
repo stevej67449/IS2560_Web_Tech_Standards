@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>HTML5 Multimedia Guide</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+         <link rel="stylesheet" href="style.css">
+        
+        <link href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    </head>
+
+    <body class="background tutorial">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="index.html">HTML5 Multimedia</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Background<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="background_history.html">Multimedia Before HTML5</a></li>
+                    <li><a href="background_changes.html">Changes With HTML5</a></li>
+                  </ul>
+                </li>   
+                <li class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="tutorial_video.html">Video</a></li>
+                    <li class="active"><a href="tutorial_audio.html">Audio</a></li>
+                  </ul>
+                </li> 
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">More Info<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="info_usability.html">Usability</a></li>
+                    <li><a href="info_accessibility.html">Accessibility</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+    
+        <div class="container">
+          <h3>Audio Tutorial</h3>
+            
+             
+            
+            <h4>Getting Started</h4>  
+            <div class='content'>
+                <p>
+                    Here is some basic HTML code to add audio to a page:
+                </p>
+                
+                <div>
+                    <div class='example-code'>
+<pre>
+<code class='code'>
+&lt;audio controls src="audio/audio1.mp3"&gt;
+   Your browser doesn't support this HTML5 Audio.
+&lt;/audio&gt;
+</code>
+</pre>
+                    </div>
+                <p>
+                   This audio tag has main two attributes, <strong>src</strong> and <strong>controls</strong>. <br/><br/>
+                   The src attribute defines where the audio file is located, and can either refrence a location locally or hosted elsewhere on the web.<br/> 
+                   The controls attribute adds control bar. Additionally, the text inside the audio tag serves as a fallback in case a user's browser doesn't support the specific audio format used.Here is the end result of that code:
+                </p>    
+                    
+                </div>
+                
+                
+                
+                <div class='example-audio'>
+                <audio src="audio/audio3.mp3" controls>
+                    Your browser doesn't support this audio format.
+                </audio>
+                     <p class='citation'>Audio courtesy of <a href="https://freesound.org/people/Trollarch2/sounds/332180/">freesound.org</a> via a <a href="https://creativecommons.org/licenses/by-nc/3.0/"><br/>
+                            </br/>Creative Commons 3.0 license</a>.<br/></p>
+                </div>
+            </div>
+            
+            <h4>Other Important Properties</h4> 
+            <div class='content'>
+                <p>
+                    Unlike video, audio elements do not have features like 'height' or 'width' becasue they lack a visual component and their 
+		    default controls are not directly editiable without the use of JavaScript. However, developers can change the way
+		    that HTML5 audio is presented to the users in a few key ways. 
+                </p>
+                <h4>preload</h4>
+                <div class='example'>
+                    <p>
+                    Three possible values.<br/>
+                        <ol>
+                            <li><span class="info-span2">None</span>: best option to minimize page load traffic.</li>
+                            <li><span class="info-span2">Metadata</span>: fetches resource metadata like duration.</li>
+                            <li><span class="info-span2">Auto</span>: allows the entire resource to be downoaded automatically.</li>
+                        </ol>
+                    </p>
+                    
+        
+                
+                    <div class='example-code'>
+<pre>
+<code class='code'>
+&lt;audio controls src="audio/audio1.mp3"  <span class='highlight'>preload="metadata"</span>&gt;
+   Your browser doesn't support this HTML5 Audio.
+&lt;/audio&gt;
+</code>
+</pre>
+                    </div>
+                
+                
+                    <div class='example-audio'>
+                        <audio controls src="audio/audio1.mp3" preload="metadata">
+                            Your browser doesn't support this HTML5 Audio.
+                        </audio>
+                        <p class='citation'>Audio courtesy of <a href="https://freesound.org/people/ShadyDave/sounds/325647/">freesound.org</a> via a <a href="https://creativecommons.org/licenses/by-nc/3.0/"><br/>
+                            </br/>Creative Commons 3.0 license</a>.<br/></p>
+                    </div>
+                
+                </div>
+                    
+
+                
+                
+                
+                <h4>loop</h4>
+                <div class='example'>
+                    <p>
+                    Adding a <span class=''>loop</span> function will keep audio repeating indefinitely until a user manually sets pause or closes page.<br/>
+                    To avoid frustrating users, try not to combine this with autoplay.
+                    </p>
+                    
+        
+                
+                    <div class='example-code'>
+<pre>
+<code class='code'>
+&lt;audio controls src="audio/audio2.mp3"  <span class='highlight'>loop</span>&gt;
+   Your browser doesn't support this HTML5 Audio.
+&lt;/audio&gt;
+</code>
+</pre>
+                    </div>
+                
+                
+                    <div class='example-audio'>
+                        <audio controls src="audio/audio2.mp3" loop>
+                            Your browser doesn't support this HTML5 Audio.
+                        </audio>
+                        <p class='citation'>Audio courtesy of <a href="https://freesound.org/people/Taira%20Komori/sounds/211687/">freesound.org</a> via a <a href="https://creativecommons.org/licenses/by-nc/3.0/"><br/>
+                            </br/>Creative Commons 3.0 license</a>.<br/></p>
+                    </div>
+                
+                </div>
+                
+
+                <h4>autoplay</h4>
+                <div class='example'>
+                    <p>
+                    Begin audio track as soon as page is loaded.
+                    </p>
+                    
+
+                    <div class='example-code'>
+<pre>
+<code class='code'>
+&lt;audio controls src="audio/audio2.mp3"  <span class='highlight'>autoplay='true'</span>&gt;
+   Your browser doesn't support this HTML5 Audio.
+&lt;/audio&gt;
+</code>
+</pre>
+                    </div>
+                
+                
+                </div>
+        
+        
+
+                
+
+          
+        </div>
+    
+    <h4>Format Considerations</h4> 
+            <div class='content'>
+                <p>
+                   HTML5 has helped standardize the integration of audio files onto webpages, but there are still some issues developers should be aware of. The most popular audio format on the web is MP3, however due to patent rights not all browsers support this format. When adding audio elements to a site it is especially important to consider duplicating the content in multiple file types for maximum usability Beyond MP3, other popular audio formats include Ogg and Wav.
+                </p>
+                
+                
+                <h4 align='center'>
+                    Audio Format Support
+                </h4>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Browser</td>
+                            <td>MP3</td>
+                            <td>Wav</td>
+                            <td>Ogg</td>
+                        </tr>  
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Internet Explorer</td>
+                            <td class='yes'>Yes</td>
+                            <td class='no'>No</td>
+                            <td class='no'>No</td> 
+                        </tr>
+                        <tr>
+                            <td>Google Chrome</td>
+                             <td class='yes'>Yes</td>
+                             <td class='yes'>Yes</td>
+                             <td class='yes'>Yes</td>
+                            
+                        </tr>    
+                        <tr>
+                             <td>Mozilla Firefox</td> 
+                             <td class='yes'>Yes</td>
+                             <td class='yes'>Yes</td>
+                             <td class='yes'>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Safari</td>  
+                             <td class='yes'>Yes</td>
+                             <td class='yes'>Yes</td>
+                            <td class='no'>No</td>
+                        </tr>    
+                        <tr>
+                            <td>Opera</td>
+                             <td class='yes'>Yes</td>
+                             <td class='yes'>Yes</td>
+                             <td class='yes'>Yes</td>
+                        </tr>
+                       
+                    </tbody>
+                    
+
+                
+                </table>
+            </div>
+          
+        </div> 
+    </body>
+    
+</html>

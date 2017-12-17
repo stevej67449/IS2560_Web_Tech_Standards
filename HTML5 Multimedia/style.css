@@ -1,0 +1,219 @@
+
+/* Page backgrounds */
+.background {
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.index {
+    background-image: url("images/background_index.jpg");
+}
+
+.tutorial {
+    background-image: url("images/background_tutorial.jpg");
+}
+
+.back {
+    background-image: url("images/background_background.jpg");
+}
+
+.info {
+    background-image: url("images/background_info.jpg");
+}
+
+/* Page Fonts */
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-align: cener;
+    color: white;
+    font-size: 500%;
+}
+
+h4 {
+    font-family: 'Droid Serif', serif;
+    font-size: 23px;
+    font-style:italic;
+    margin-top: 5%;
+}
+
+p {
+  font-family: 'Droid Serif', serif;
+    font-size: 16px;  
+}
+
+p a {
+    text-decoration: underline;
+}
+
+/* Content Div CSS */
+
+.content {
+    overflow: auto;
+    width: 100%;
+    height: max-content;
+    background-color: azure;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    padding: 4%;
+    box-shadow: 5px 10px 8px #222222;
+    font-size: 16px;
+}
+
+/* Text Highlighting */
+.audio-span {
+    color: #EBB390;
+    font-weight: 600;
+}
+
+.video-span {
+    color: #BF9DA4;
+    font-weight: 600;
+}
+
+.background-span1 {
+    color: #7EC6D9;
+    font-weight: 600;
+    
+}
+
+.background-span2 {
+    color: #82DDE6;
+    font-weight: 600;
+}
+
+.info-span1 {
+    color: #A795FF;
+    font-weight: 600;
+}
+
+.info-span2 {
+    color: #C79CE7;
+    font-weight: 600;
+}
+
+/* Pre HTML Background Page */
+#pre-text {
+    width: 70%;
+    float: left;
+}
+
+#pre-image {
+    width: 20%;
+    margin-left: 10%;
+}
+
+figcaption {
+    text-align: right;
+    font-size: 75%;
+}
+
+#second-caption {
+    text-align: left;
+}
+
+#plugin-img {
+    width: 20%;
+    margin-right: 30px;
+    float: left;
+}
+
+#plugin-text {
+    width: 40%
+    float: left;
+}
+
+sub a{
+    text-decoration: none;
+    color:crimson;
+    font-weight: bold;
+}
+
+table,td {
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid #ddd;
+}
+
+table {
+  margin: 2% auto;
+  border-collapse: collapse;
+  width: 80%;  
+}
+
+thead {
+    font-weight: bold;
+    color: white;
+    background-color: #9F88E2;
+}
+
+td {
+    width: max-content%;
+    padding: 10px;
+}
+
+/* HTML5 Changes Page */
+
+.left-align {
+    text-align: left;
+}
+
+#support-image {
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* Video Tutorial Page */
+
+pre {
+    width: max-content;
+    padding: 3%;
+    color: white;
+    background-color: slategrey;
+    
+}
+
+
+.example {
+    margin-left: 5%;
+    width: 90;
+}
+
+.highlight {
+    color: #f4cd89;
+}
+
+.citation {
+    font-size: 75%;
+    text-align: center;
+}
+
+/* Audio Tutorial Page */
+
+.yes {
+    background-color: #8DF47C;
+}
+
+.no {
+   background-color: #F68483; 
+}
+
+.example-audio {
+    width: max-content;
+    padding: 3%;
+    background-color: #F9DCE7;
+    
+}
+
+
+
+
+
+
+

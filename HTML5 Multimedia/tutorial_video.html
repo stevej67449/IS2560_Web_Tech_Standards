@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>HTML5 Multimedia Guide</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+         <link rel="stylesheet" href="style.css">
+        
+        <link href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    </head>
+
+    <body class="background tutorial">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="index.html">HTML5 Multimedia</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Background<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="background_history.html">Multimedia Before HTML5</a></li>
+                    <li><a href="background_changes.html">Changes With HTML5</a></li>
+                  </ul>
+                </li>  
+                <li class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="active"><a href="tutorial_video.html">Video</a></li>
+                    <li><a href="tutorial_audio.html">Audio</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">More Info<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="info_usability.html">Usability</a></li>
+                    <li><a href="info_accessibility.html">Accessibility</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+    
+        <div class="container">
+          <h3>HTML5 Video Tutorial</h3>
+            
+           <h4>Getting Started</h4>  
+            <div class='content'>
+                <p>
+                   Adding video content to a page is easy!  
+                    Using the video tag you can add a video element much like you would add an image.<br/><br/>
+                    Here is some basic code to add a video:
+                </p>
+                
+                <div>
+<pre class='example'>
+<code class='code'>
+&lt;video src="video/vid1.mp4" controls='controls'&gt;
+   Your browser doesn't support this HTML5 Video.
+&lt;/video&gt;
+</code>
+</pre>
+                <p>
+                   This video tag has two attributes, <strong>src</strong> and <strong>controls</strong>. <br/>
+                   The src attribute defines where the video file is located  and can be included in the video tag or a seperate 'source' tag like this:<br/> 
+                    
+<pre class='example'>
+<code class='code'>
+&lt;video  controls='controls'&gt;
+    &lt;source&gt; src="video/vid1.mp4" type='audio/mp4' &lt;/source&gt;
+   Your browser doesn't support this HTML5 Video.
+&lt;/video&gt;
+</code>
+</pre>
+                    
+                   The controls attribute adds the bottom control bar to the video. Finally, the text inside the video tag serves as a fallback in case a user's browser doesn't support either HTML5 video or the specific video type used.Here is the end result of that code:
+                </p>    
+                    
+                </div>
+                
+                
+                
+                
+                <video src="video/vid1.mp4" controls='controls'>
+                    Your browser doesn't support HTML5 Video.
+                </video>
+            </div>
+            
+             <h4>Other Important Attributes</h4> 
+            <div class='content'>
+                <p>
+                    There are many attributes you can use to change the look and behavior of video content in HTML5,
+                    but these are a few of the most common attributes used to control video elements. 
+                    Each attribute includes an example of code, and some also feature a preview of how that code would be implemented.
+                </p>
+                <h4>autoplay</h4>
+                <div class='example'>
+                <p>
+                    Set as a boolean attribute (true/false).<br/>
+                    Allows video to begin play automatically on page load.<br/><br/>
+                    <u>Note:</u> In most cases autoplaying is not reccommended <br/>
+                    as it can be an annoyance to users or slow down your page.
+                </p>
+                
+                    <div class='example-code'>
+<pre>
+<code class='code'>
+&lt;video src="video/vid1.mp4" controls='controls' <span class='highlight'>autoplay='true'</span>&gt;
+   Your browser doesn't support HTML5 Video.
+&lt;/video&gt;
+</code>
+</pre>
+                    </div>
+
+                </div>
+                
+                
+                <h4>height</h4>
+                <div class='example'>
+                    <p>
+                        Absolute values only, no percentages.<br/>
+                        The height of video display.
+                    </p>
+                    <div class='example-code'>
+<pre>
+<code class='code'>
+&lt;video src="video/vid1.mp4" controls='controls' <span class='highlight'>height=400</span>&gt;
+   Your browser doesn't support HTML5 Video.
+&lt;/video&gt;
+</code>
+</pre>
+                    </div>
+                    <div class='example-video'>
+                        <video src="video/vid2.mp4" controls='controls' height=400>
+                        Your browser doesn't support HTML5 Video.
+                    </video>
+                    </div>
+                    
+                    
+                </div>
+                
+
+                <h4>loop</h4>
+                <div class='example'>
+                 <p>
+                    Set as a boolean attribute (true/false).<br/>
+                    Video will continue to repeat after finishing.
+                </p>
+                
+                <div class='example-code'>
+<pre>
+<code class='code'>
+&lt;video src="video/vid1.mp4" controls='controls' <span class='highlight'>loop='true'</span>&gt;
+   Your browser doesn't support HTML5 Video.
+&lt;/video&gt;
+</code>
+</pre>
+                    </div>
+                    <div class='example-video'>
+                        <video src="video/vid3.mp4" controls='controls' autoplay='true' loop='true'>
+                        Your browser doesn't support HTML5 Video.
+                    </video>
+                    </div>
+                </div>
+
+                
+                <h4>muted</h4>
+                <div class='example'>
+                    <p>
+                        Set as a boolean attribute (true/false).<br/>
+                        If set to 'true', video starts without sound.<br/>
+                        If set to 'false', sound will play when vieo is played.
+                    </p>
+                    <div class='example-code'>
+<pre>
+<code class='code'>
+&lt;video src="video/vid1.mp4" controls='controls' <span class='highlight'>muted='true'</span>&gt;
+   Your browser doesn't support HTML5 Video.
+&lt;/video&gt;
+</code>
+</pre>
+                    </div>
+                
+
+                
+            </div>
+                
+                            <h4>width</h4>
+                <div class='example'>
+                    <p>
+                        Absolute values only, no percentages.<br/>
+                        The width of video display.  
+                    </p>
+                    <div class='example-code'>
+<pre>
+<code class='code'>
+&lt;video src="video/vid1.mp4" controls='controls' <span class='highlight'>width=50</span>&gt;
+   Your browser doesn't support HTML5 Video.
+&lt;/video&gt;
+</code>
+</pre>
+                    </div>
+                     <div class='example-video'>
+                        <video src="video/vid4.mp4" controls='controls' width=175>
+                        Your browser doesn't support HTML5 Video.
+                    </video>
+                    </div>
+                </div>
+          
+        </div>
+        
+        <h4>More Resources</h4>    
+        <div class='content'>
+            <p>To learn more about how to use the HTML5 video tag, check out these links:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">Mozilla Video Element Documentation</a></li>
+                <li> <a href="https://dev.opera.com/articles/introduction-html5-video/#why">Opera Developer's Introduction to HTML5 Video</a></li>
+                <li><a href='https://www.tutorialrepublic.com/html-tutorial/html5-video.php'>Tutorial Republic's Step-By-Step Guide to HTML5 Video Elements</a></li>
+            </ul>
+            <br/><br/>
+            <p class ='citation'>The video clips on this page are from a public domain production of <i>Alice in Wonderland</i> 
+                and are available via a <a href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons 3.0 license</a>.<br/>
+                You can view more clips from this film at <a href="
+https://archive.org/details/vj-diPSy-Alicevideoloops">Archive.org.</a>.
+                
+            </p> 
+           
+        </div>
+         
+        </div>
+     
+    </body>
+    
+</html>

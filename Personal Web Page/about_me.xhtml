@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+lang="en">
+
+    <head>
+    
+    <title>Steve Johnston - About Me</title>
+        
+    <link rel="shortcut icon" href="images/sj_icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet"/>
+        
+     <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet"/>   
+        
+    </head>
+    
+    <body>
+        
+        <!-- Navigation Bar html and css based from code found at:
+        https://jsfiddle.net/j08691/t46bcayd/2/ !-->
+
+        
+        <div>
+            <ul>
+                <li><a href="index.xhtml" class="logo">STEVE JOHNSTON</a></li>
+                <li><a href="contact.xhtml">Contact</a></li>
+                <li><a href="skills.xhtml">Skills</a></li>
+                <li><a href="education.xhtml">Education</a></li>
+                <li><a href="about_me.xhtml" class="current">About Me</a></li>
+            </ul>
+        </div>
+        
+        <!-- About Me Page Content !-->
+        
+        <div class="container">
+    
+            
+            <div id="about-text">
+                
+                <h2>My Story</h2>
+                <p> 
+                    
+                    Although I have lived in many different states, I consider my home to be Kansas. I began my college studies there before joining the U.S. Air Force in 2010. For almost my entire military career I was stationed in Maryland working as an Intelligence Analyst.
+                
+                    <br/><br/>
+                    
+                    When I left the service in 2015, I moved to Pittsburgh and started learning web development as a hobby. Eventually I became serious about expanding my development skills further, so I made the decision to pursue a degree in Information Science at the University of Pittsburgh. 
+                    
+                    <br/><br/>
+                    
+                    I have a strong interest in topics related to user experience (UX), user interaction (UI), usability, and human-computer interaction (HCI).
+                </p>
+                
+                
+            
+            </div>
+        
+        </div>
+            
+        <!-- Footer bar code built using: 
+        https://codepen.io/cbracco/pen/zekgx !-->
+        
+        <div id="page-footer"></div>
+        
+        <script type="text/javascript">
+            
+            /* Date formating sourced from:
+            https://stackoverflow.com/questions/38924416/how-to-convert-date-time-in-format-mm-dd-yyyy */
+              
+            var modDate = new Date(document.lastModified);
+            
+            function formatDate(date) {
+                            
+                var month = 1 + date.getMonth();
+                
+                var day = date.getDate();
+                
+                var year = date.getFullYear();
+                
+                return month + "/" + day + "/" + year;
+                
+            }
+            
+            document.getElementById("page-footer").innerHTML = "Page last updated " + formatDate(modDate);
+        
+        </script>
+    
+    
+    
+    </body>
+
+</html>

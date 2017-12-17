@@ -1,0 +1,273 @@
+<html>
+
+    <head>
+    
+        <title>Smart Document</title>
+        
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+        <script src="javascript.js"> </script>    
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+        <!-- 
+            Steve Johnston
+            Assignment#2: Smart Documents
+            INFSCI 2560 - Web Technologies and Standards
+        -->
+    </head>
+    
+    <body>
+       
+        
+        <div class="left-side">
+            
+            
+            <div id="banner">
+                <div id="logo"><img src="images/logo1.png" alt="IP Logo"></div>
+                <div id="banner-text"><h1>Phase 1 Menu Planner</h1></div>
+                <div id="directions"><p>To build your own menu, just click on your favorite food items from from each section.<br>Note: Items with a "+" next to them can be expanded to show more detailed options.</p></div>
+            </div>
+            
+                <div id="dinnerProtein">
+                <h3>Dinner Protein</h3>
+                    <p class="details">8oz Serving. No frying or breading premitted.</p>
+                    <ul>
+                        <li class="primary" onclick="visToggle('fish-protein')">Fish<span class="expandIcon"> +</span></li>
+                            <ul id="fish-protein" class="hidden">
+                                <li id="101" class="free secondary" onclick="select('101')">Anchovy</li>
+                                <li id="102" class="free secondary" onclick="select('102')">Bass</li>
+                                <li id="103" class="free secondary" onclick="select('103')">Catfish</li>
+                                <li id="104" class="free secondary" onclick="select('104')">Cod</li>
+                                <li id="105" class="free secondary" onclick="select('105')">Flounder</li>
+                                <li id="106" class="free secondary" onclick="select('106')">Grouper</li>
+                                <li id="107" class="free secondary" onclick="select('107')">Haddock</li>
+                                <li id="108" class="free secondary" onclick="select('108')">Hake</li>
+                                <li id="109" class="free secondary" onclick="select('109')">Halibut</li>
+                                <li id="110" class="free secondary" onclick="select('110')">Mahi-Mahi</li>
+                                <li id="111" class="free secondary" onclick="select('111')">Monkfish</li>
+                                <li id="112" class="free secondary" onclick="select('112')">Perch</li>
+                                <li id="113" class="free secondary" onclick="select('113')">Pike</li>
+                                <li id="114" class="free secondary" onclick="select('114')">Red Snapper</li>
+                                <li id="115" class="free secondary" onclick="select('115')">Redfish</li>
+                                <li id="116" class="free secondary" onclick="select('116')">Sea Bass</li>
+                                <li id="117" class="free secondary" onclick="select('117')">Shark</li>
+                                <li id="118" class="free secondary" onclick="select('118')">Smelt</li>
+                                <li id="119" class="free secondary" onclick="select('119')">Sole</li>
+                                <li id="120" class="free secondary" onclick="select('120')">Swordfish</li>
+                                <li id="121" class="free secondary" onclick="select('121')">Tilapia</li>
+                                <li id="122" class="free secondary" onclick="select('122')">Tuna</li>
+                                <li id="123" class="free secondary" onclick="select('123')">Trout</li>
+                                <li id="124" class="free secondary" onclick="select('124')">Turbot</li>
+                                <li id="125" class="free secondary" onclick="select('125')">Walleye</li>
+                                <li id="126" class="free secondary" onclick="select('126')">Whiting</li>
+                                <li id="127" class="free secondary" onclick="select('127')">Salmon</li>
+                            </ul>
+
+                        <li class="primary" onclick="visToggle('seafood-protein')">Seafood<span class="expandIcon"> +</span></li>
+                            <ul id="seafood-protein" class="hidden">    
+                                <li id="128" class="free secondary" onclick="select('128')">Clams</li>
+                                <li id="129" class="free secondary" onclick="select('129')">Crab</li>
+                                <li id="130" class="free secondary" onclick="select('130')">Crawfish</li>
+                                <li id="131" class="free secondary" onclick="select('131')">Lobster</li>
+                                <li id="132" class="free secondary" onclick="select('132')">Mussels</li>
+                                <li id="133" class="free secondary" onclick="select('133')">Oysters</li>
+                                <li id="134" class="free secondary" onclick="select('134')">Scallops</li>
+                                <li id="135" class="free secondary" onclick="select('135')">Scampi</li>
+                                <li id="136" class="free secondary" onclick="select('136')">Shrimp</li>
+                                <li id="137" class="free secondary" onclick="select('137')">Squid</li>
+                            </ul>
+
+                        <li class="primary" onclick="visToggle('beef-protein')">Beef<span class="expandIcon"> +</span></li>
+                            <ul id="beef-protein" class="hidden">    
+                                <li id="138" class="free secondary" onclick="select('138')">Flank Steak</li>
+                                <li id="139" class="free secondary" onclick="select('139')">Ground Beef (Extra-Lean)</li>
+                                <li id="140" class="free secondary" onclick="select('140')">Lean Roast</li>
+                                <li id="141" class="free secondary" onclick="select('141')">Round</li>
+                                <li id="142" class="free secondary" onclick="select('142')">Rump Steak</li>
+                                <li id="143" class="free secondary" onclick="select('143')">Sirloin</li>
+                                <li id="144" class="free secondary" onclick="select('144')">Beef Tenderloin</li>
+                                <li id="145" class="free secondary" onclick="select('145')">Tournedos</li>
+                            </ul>
+
+                        <li class="primary" onclick="visToggle('poultry-protein')">Poultry<span class="expandIcon"> +</span></li>
+                            <ul id="poultry-protein" class="hidden">    
+                                <li id="146" class="free secondary" onclick="select('146')">Chicken (Skinless)</li>
+                                <li id="147" class="free secondary" onclick="select('147')">Eggs (Whole and Egg Whites)</li>
+                                <li id="148" class="free secondary" onclick="select('148')">Fowl</li>
+                                <li id="149" class="free secondary" onclick="select('149')">Quail</li>
+                                <li id="150" class="free secondary" onclick="select('150')">Turkey</li>
+                                <li id="151" class="free secondary" onclick="select('151')">Wild Birds</li>
+                            </ul>
+
+                        <li class="primary" onclick="visToggle('pork-protein')">Pork<span class="expandIcon"> +</span></li>
+                            <ul id="pork-protein" class="hidden">    
+                                <li id="152" class="free secondary" onclick="select('152')">Lean Ham</li>
+                                <li id="153" class="free secondary" onclick="select('153')">Pork Tenderloin</li>
+                            </ul>
+
+                        <li class="primary" onclick="visToggle('veal-protein')">Veal<span class="expandIcon"> +</span></li>
+                            <ul id="veal-protein" class="hidden">    
+                                <li id="154" class="free secondary" onclick="select('154')">Breast Cutlet</li>
+                                <li id="155" class="free secondary" onclick="select('155')">Inside Round Scaloppini</li>
+                                <li id="156" class="free secondary" onclick="select('156')">Rib</li>
+                                <li id="157" class="free secondary" onclick="select('157')">Shank</li>
+                                <li id="158" class="free secondary" onclick="select('158')">Shoulder</li>
+                                <li id="159" class="free secondary" onclick="select('159')">Veal Tenderloin</li>
+                            </ul>
+
+                        <li class="primary" onclick="visToggle('other-protein')">Other<span class="expandIcon"> +</span></li>
+                            <ul id="other-protein" class="hidden">    
+                                <li id="160" class="free secondary" onclick="select('160')">Bison</li>
+                                <li id="161" class="free secondary" onclick="select('161')">Deer</li>
+                                <li id="162" class="free secondary" onclick="select('162')">Elk</li>
+                                <li id="163" class="free secondary" onclick="select('163')">Frog Legs</li>
+                                <li id="164" class="free secondary" onclick="select('164')">Kidney</li>
+                                <li id="165" class="free secondary" onclick="select('165')">Lamb Loin</li>
+                                <li id="166" class="free secondary" onclick="select('166')">Liver</li>
+                                <li id="167" class="free secondary" onclick="select('167')">Moose</li>
+                                <li id="168" class="free secondary" onclick="select('168')">Ostrich</li>
+                                <li id="169" class="free secondary" onclick="select('169')">Rabbit</li>
+                                <li id="170" class="free secondary" onclick="select('170')">Plain Tofu</li>
+                            </ul>
+
+                        </ul>
+                    </div>
+                <div id="unlimitedRawVeg">
+                <h3>Unlimited Raw Vegetables</h3>
+                    <ul>
+                        <li id="201" class="free primary" onclick="select('201')">Arugula</li>
+                        <li id="202" class="free primary" onclick="select('202')">Bibb Letuce</li>
+                        <li id="203" class="free primary" onclick="select('203')">Boston Lettuce</li>
+                        <li id="204" class="free primary" onclick="select('204')">Celery</li>
+                        <li id="205" class="free primary" onclick="select('205')">Chicory Lettuce</li>
+                        <li id="206" class="free primary" onclick="select('206')">Cucumber</li>
+                        <li id="207" class="free primary" onclick="select('207')">Endives</li>
+                        <li id="208" class="free primary" onclick="select('208')">Escarole Lettuce</li>
+                        <li id="209" class="free primary" onclick="select('209')">Frisée Lettuce</li>
+                        <li id="210" class="free primary" onclick="select('210')">Green and Red Leaf Lettuce</li>
+                        <li id="211" class="free primary" onclick="select('211')">Iceberg Lettuce</li>
+                        <li id="212" class="free primary" onclick="select('212')">Mushroom (Raw)</li>
+                        <li id="213" class="free primary" onclick="select('213')">Radicchio</li>
+                        <li id="214" class="free primary" onclick="select('214')">Radish</li>
+                        <li id="215" class="free primary" onclick="select('215')">Romain Lettuce</li>
+                        <li id="216" class="free primary" onclick="select('216')">Spinach Lettuce</li>
+                        <li id="217" class="free primary" onclick="select('217')">Watercress Lettuce</li>
+                    </ul>
+                    </div>
+                <div id="selectVeg">
+                <h3>Select Vegetables</h3>
+                    <p class="details">2 cups per meal.</p>
+                    <ul>
+                        <li id="301" class="free primary" onclick="select('301')">Alfalfa</li>
+                        <li id="302" class="free primary" onclick="select('302')">Asparagus</li>
+                        <li id="303" class="free primary" onclick="select('303')">Bamboo Shoots</li>
+                        <li id="304" class="free primary" onclick="select('304')">Bean Sprouts</li>
+                        <li id="305" class="free primary" onclick="select('305')">Bell Peppers</li>
+                        <li id="306" class="free primary" onclick="select('306')">Broccoli</li>
+                        <li id="307" class="free primary" onclick="select('307')">Cabbage </li>
+                        <li id="308" class="free primary" onclick="select('308')">Cauliflower</li>
+                        <li id="309" class="free primary" onclick="select('309')">Celeriac</li>
+                        <li id="310" class="free primary" onclick="select('310')">Celery</li>
+                        <li id="311" class="free primary" onclick="select('311')">Chayote</li>
+                        <li id="312" class="free primary" onclick="select('312')">Chicory</li>
+                        <li id="313" class="free primary" onclick="select('313')">Collards</li>
+                        <li id="314" class="free primary" onclick="select('314')">Cucumbers</li>
+                        <li id="315" class="free primary" onclick="select('315')">Dill Pickles</li>
+                        <li id="316" class="free primary" onclick="select('316')">Fennel</li>
+                        <li id="317" class="free primary" onclick="select('317')">Gai Lan (Chinese broccoli)</li>
+                        <li id="318" class="free primary" onclick="select('318')">Green Onions</li>
+                        <li id="319" class="free primary" onclick="select('319')">Jicama</li>
+                        <li id="320" class="free primary" onclick="select('320')">Kale</li>
+                        <li id="321" class="free primary" onclick="select('321')">Kohlrabi</li>
+                        <li id="322" class="free primary" onclick="select('322')">Mushrooms (Cooked)</li>
+                        <li id="323" class="free primary" onclick="select('323')">Okra</li>
+                        <li id="324" class="free primary" onclick="select('324')">Onions (Raw Only)</li>
+                        <li id="325" class="free primary" onclick="select('325')">Hot Peppers</li>
+                        <li id="326" class="free primary" onclick="select('326')">Radish</li>
+                        <li id="327" class="free primary" onclick="select('327')">Rhubarb</li>
+                        <li id="328" class="free primary" onclick="select('328')">Sauerkraut</li>
+                        <li id="329" class="free primary" onclick="select('329')">Swiss Chard</li>
+                        <li id="330" class="free primary" onclick="select('330')">Turnip</li>
+                        <li id="331" class="free primary" onclick="select('331')">Zucchini</li>
+                        <li id="332" class="free primary" onclick="select('332')">Yellow Summer Squash</li>
+                    </ul>
+</div>
+            <div id="occasionalVeg">
+                <h3>Occasional Vegetables</h3>
+                <p class="details">Maximum 4 cups per week.</p>
+                    <ul>
+                        <li id="401" class="free primary" onclick="select('401')">Beans (Green and Wax)</li>
+                        <li id="402" class="free primary" onclick="select('402')">Brussel Sprouts</li>
+                        <li id="403" class="free primary" onclick="select('403')">Eggplant</li>
+                        <li id="404" class="free primary" onclick="select('404')">Heart of Palm</li>
+                        <li id="405" class="free primary" onclick="select('405')">Rutabaga</li>
+                        <li id="406" class="free primary" onclick="select('406')">Snow Peas</li>
+                        <li id="407" class="free primary" onclick="select('407')">Tomatillo</li>
+                        <li id="408" class="free primary" onclick="select('408')">Tomatoes (All)</li>
+                    </ul>
+                </div>
+                <div id="seasonings">
+                <h3>Seasoning</h3>
+                    <ul>
+                        <li id="501" class="free primary" onclick="select('501')">Apple Cider Vinegar</li>
+                        <li id="502" class="free primary" onclick="select('502')">Fine Herbs</li>
+                        <li id="503" class="free primary" onclick="select('503')">Eggplant</li>
+                        <li class="primary" onclick="visToggle('herb-seasonings')">Fresh Herbs<span class="expandIcon"> +</span></li>
+                            <ul id="herb-seasonings" class="hidden" >
+                                <li id="504" class="free secondary" onclick="select('504')">Basil</li>
+                                <li id="505" class="free secondary" onclick="select('505')">Bay Leaves</li>
+                                <li id="506" class="free secondary" onclick="select('506')">Cilantro</li>
+                                <li id="507" class="free secondary" onclick="select('507')">Chervil</li>
+                                <li id="508" class="free secondary" onclick="select('508')">Chives</li>
+                                <li id="509" class="free secondary" onclick="select('509')">Dill</li>
+                                <li id="510" class="free secondary" onclick="select('510')">Marjoram</li>
+                                <li id="511" class="free secondary" onclick="select('511')">Mint</li>
+                                <li id="512" class="free secondary" onclick="select('512')">Oregano</li>
+                                <li id="513" class="free secondary" onclick="select('513')">Parsley</li>
+                                <li id="514" class="free secondary" onclick="select('514')">Rosemary</li>
+                                <li id="515" class="free secondary" onclick="select('515')">Sage</li>
+                                <li id="516" class="free secondary" onclick="select('516')">Savory</li>
+                                <li id="517" class="free secondary" onclick="select('517')">Tarragon</li>
+                                <li id="518" class="free secondary" onclick="select('518')">Thyme</li>
+                            </ul>
+                        <li id="519" class="free primary" onclick="select('519')">Garlic</li>
+                        <li id="520" class="free primary" onclick="select('520')">Ginger</li>
+                        <li id="521" class="free primary" onclick="select('521')">Lemon</li>
+                        <li id="522" class="free primary" onclick="select('522')">Lemmongrass</li>
+                        <li id="523" class="free primary" onclick="select('523')">Hot Mustard</li>
+                        <li id="524" class="free primary" onclick="select('524')">Hot Sauce</li>
+                        <li id="525" class="free primary" onclick="select('525')">Soy Sauce</li>
+                        <li id="526" class="free primary" onclick="select('526')">Sorrel</li>
+                        <li id="527" class="free primary" onclick="select('527')">Spices (MSG Free/No Carbohydrates)</li>
+                        <li id="528" class="free primary" onclick="select('528')">Tamari Sauce (1 Tbsp)</li>
+                        <li id="529" class="free primary" onclick="select('529')">White Vinegar</li>
+                    </ul>
+                    </div>
+            
+        </div>
+        
+        <div class="right-side">
+            
+            <div id="createdMenu">
+            <h2 id="menu-title">My Menu</h2>
+            </div>
+                
+            <div id="proteinMenu"><h3>Dinner Protein</h3></div>
+            
+            <div id="uVegMenu"><h3>Unlimited Raw Vegetables</h3></div>
+            
+            <div id="sVegMenu"><h3>Select Vegetables</h3></div>
+            
+            <div id="oVegMenu"><h3>Occasional Vegetables</h3></div>
+            
+            <div id="seasonMenu"><h3>Seasoning</h3></div>
+        
+        </div>
+            
+            
+
+    
+    </body>
+
+</html>

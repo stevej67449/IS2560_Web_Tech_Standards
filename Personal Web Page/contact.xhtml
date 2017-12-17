@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+lang="en">
+
+    <head>
+    
+    <title>Steve Johnston - Contact</title>
+    
+     <link rel="shortcut icon" href="images/sj_icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+        
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet"/>
+        
+     <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet"/>  
+        
+    </head>
+    
+    <body>
+        
+        <!-- Navigation Bar html and css based from code found at:
+        https://jsfiddle.net/j08691/t46bcayd/2/ !-->
+
+        
+        <div>
+            <ul>
+                <li><a href="index.xhtml" class="logo">STEVE JOHNSTON</a></li>
+                <li><a href="contact.xhtml" class="current">Contact</a></li>
+                <li><a href="skills.xhtml" >Skills</a></li>
+                <li><a href="education.xhtml">Education</a></li>
+                <li><a href="about_me.xhtml">About Me</a></li>
+            </ul>
+        </div>
+        
+        <!-- Contact Page Content  !-->
+        
+        <div class="container">
+    
+            <div id="social-group">
+            
+                <h2>Follow My Work Online</h2>
+
+                <a href="https://twitter.com/The_Steve_J"><img class="social" src="images/twitter.png" alt="Twitter Icon"/></a>
+            
+                <a href="https://www.linkedin.com/in/steven-johnston-82991b102/"><img class="social" src="images/linkedin.png" alt="LinkedIn Icon"/></a>
+        
+                <a href="https://github.com/stevej67449"><img class="social" src="images/github.png" alt="Github Icon"/></a>
+    
+    
+                <a href="https://codepen.io/steven_johnston_pgh"><img class="social" src="images/codepen.png" alt="Codepen Icon"/></a>
+
+            
+            </div>
+
+            <div id="email-group">
+
+                <h2>Send Me An Email</h2>
+
+                <a href="mailto:sdj25@pitt.edu"><img id="email" src="images/email.png" alt="Email Icon"/></a>
+            
+            </div>
+
+
+
+        </div>
+
+
+        <!-- Footer bar code built using: 
+        https://codepen.io/cbracco/pen/zekgx !-->
+        
+        <div id="page-footer"></div>
+        
+        <script type="text/javascript">
+            
+            /* Date formating sourced from:
+            https://stackoverflow.com/questions/38924416/how-to-convert-date-time-in-format-mm-dd-yyyy */
+              
+            var modDate = new Date(document.lastModified);
+            
+            function formatDate(date) {
+                            
+                var month = 1 + date.getMonth();
+                
+                var day = date.getDate();
+                
+                var year = date.getFullYear();
+                
+                return month + "/" + day + "/" + year;
+                
+            }
+            
+            document.getElementById("page-footer").innerHTML = "Page last updated " + formatDate(modDate);
+        
+        </script>
+    
+    
+    
+    </body>
+
+</html>
